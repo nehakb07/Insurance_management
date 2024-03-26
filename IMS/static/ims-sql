@@ -1,0 +1,27 @@
+-- Table structure for table `home_insurance`
+CREATE TABLE IF NOT EXISTS 'home_insurance' (
+  'id' int(11) NOT NULL AUTO_INCREMENT,
+  'insurance_type' varchar(50) NOT NULL,
+  'property_id' int(11) NOT NULL,
+  'year_built' int(11) NOT NULL,
+  'construction_type' varchar(50) NOT NULL,
+  PRIMARY KEY ('id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Table structure for table `auto_insurance`
+CREATE TABLE IF NOT EXISTS 'auto_insurance' (
+  'id' int(11) NOT NULL AUTO_INCREMENT,
+  'dl' varchar(50) NOT NULL,
+  'rc' varchar(50) NOT NULL,
+  'autoinsurance_type' varchar(50) NOT NULL,
+  PRIMARY KEY ('id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Table structure for table `travel_insurance`
+CREATE TABLE IF NOT EXISTS 'travel_insurance' (
+  'id' int(11) NOT NULL AUTO_INCREMENT,
+  'duration' varchar(50) NOT NULL,
+  'destination' varchar(50) NOT NULL,
+  'mode_of_transport' varchar(50) NOT NULL,
+  PRIMARY KEY ('id')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
